@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+:root{
+    --cor-A: #1D1C45;
+    --cor-B: #C8C8DE;
+    --cor-C: #5251C4;
+    --cor-D: #232245;
+    --cor-E: #3D3B8F;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+/* navbar  */
+.navbar-nav{
+    margin-right: 0 !important;
+    padding-right: 100px;
+}
+
+.navbar{
+    background-color: var(--cor-A);
+    color: #fff !important;
+}
+
+.nav-item a{
+    color: #fff !important;
+}
+
+.nav-item a:hover{
+    color: var(--cor-C) !important;
+}
+
+.nav-item{
+    padding-left: 10px;
+}
+
+.navbar-brand{
+    color: var(--cor-B) !important;
+    padding-left: 10px;
+}
+
+#navbar button{
+    color: #fff !important;
+}
+
+/* banner */
+#banner-container{
+    background-color: var(--cor-A);
+    color: #fff !important;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#banner-row img{
+    max-width: 78%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-top: 12px;    
+}
+
+#banner-row a{
+  background-color: var(--cor-B) !important;
+  color: #000 !important;
+  border: none;
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#banner-row a:hover{
+  background-color: var(--cor-E) !important;
+  color: #fff !important;
+}
+
+#banner-row h3,p{
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#banner-row h3{
+   margin-top: 50px;
+   font-size: 45px;
+}
+
+#banner-row p{
+  font-size: 20px;
+}
+
+#banner-col{
+    padding-left: 20px;
+}
+
+.button{
+  font-size: 18px;
+  text-align: center;
+  border: 0;
+  border-radius: 50px;
+  padding: 8px 20px;
+  color: #fff;
+  background-color: var(--cor-B);
+  cursor: pointer;
+  overflow: hidden;
+  transform: translate(0);
+}
+
+/* Serviços */
+#servicos{
+    padding-top: 90px;
+    padding-bottom: 130px;
+}
+
+#servicos h1{
+    padding-bottom: 90px;
+}
+
+#servicos h3{
+  font-size: 35px;
+}
+
+/* Sobre */
+#sobre {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#sobre h1{
+    padding-bottom: 60px;
+}
+
+#img-sobre{
+   margin-top: 130px;
+    width: 600px;
+}
+#sobre h3{
+  font-size: 38px;
+}
+
+/* Criadores */
+#criadores h1{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.father{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.card{
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px 20px;
+    margin: 20px;
+    width: 250px;
+    transition: all 0.2s ease-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+   
+.card h3 {
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: left;
+}      
+.card p {
+    color: var(--cor-D);
+    font-size: 17px;
+    text-align: justify;
+}
+   
+.card img{
+    border-radius: 5px;
+    width: 200px;
+    height: 197px;
+}
+   
+.blue {
+   border-left: 3px solid #4895ff;
+}
+   
+.green {
+    border-left: 3px solid #3bb54a;
+}
+   
+.red {
+    border-left: 3px solid #b3404a;
+}
+
+.orange {
+    border-right: 3px solid #e78f1b;
+}
+
+.yellow {
+    border-right: 3px solid #ebe706;
+}
+
+.purple {
+    border-left: 3px solid #7b40b3;
+}
+
+.cyan {
+    border-right: 3px solid cyan;
+}
+
+.black {
+    border-right: 3px solid black;
+}
+
+ 
+/* Contato */
+#footer{
+    background-color: var(--cor-A);
+    color: #fff !important;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+#contato h3{
+  color: var(--cor-B);
+  font-size: 35px;
+}
+
+.mb-3{
+  padding-top: 10px;
+}
+
+.mb-3 #button{
+  margin-top: 10px;
+}
+
+#emailHelp{
+    color: var(--cor-B);
+}
+
+#contato img{
+    margin-left: 90px;
+    width: 270px;
+    height: 270px;
+}
+
+#contato p{
+ font-size: 18px;
+}
+
+@media only screen and (max-width:960px)
+{
+	.navbar-brand{
+		padding-left:0;
+	}
+    #contato img{
+        margin-top: 40px;
+        margin-left: 50px;
+        width: 250px;
+        height: 200px;
+    }
+}
+@media only screen and (max-width:760px)
+{
+	#banner-row img{
+		padding-top:20px;
+	}
+    
+    #contato img{
+        margin: auto;
+        margin-top: 40px;
+        width: 180px;
+        height: 180px;
+    }
+}
+	
