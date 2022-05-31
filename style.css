@@ -252,10 +252,15 @@
  font-size: 18px;
 }
 
-@media only screen and (max-width:960px)
+@media only screen and (max-width:962px)
 {
 	.navbar-brand{
 		padding-left:0;
+	}
+    #banner-row img{
+        width: 100%;
+        margin-top: 50px;
+       
 	}
     #contato img{
         margin-top: 40px;
@@ -267,12 +272,22 @@
 @media only screen and (max-width:760px)
 {
 	#banner-row img{
-		padding-top:20px;
+       padding: 20px 10px 0px;
+       margin: 20px 20px;
 	}
+
+    #banner-row h3,p{
+        padding: 20px 10px 0px;
+        text-align: center;
+    }
+
+    #banner-row a{
+        margin: 20px 10px 0px;
+    }
     
     #contato img{
-        margin: auto;
         margin-top: 40px;
+        margin-left: 95px;
         width: 180px;
         height: 180px;
     }
